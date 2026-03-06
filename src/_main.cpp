@@ -40,7 +40,7 @@ public:
 
                 auto canvas = CCNode::create();
                 canvas->setID("canvas for " + textureNameToMergeInto);
-                DEBUG SceneManager::get()->keepAcrossScenes(canvas);
+                DEBUG OverlayManager::get()->addChild(canvas);
 
                 static std::unordered_map<std::string, Ref<CCSprite>> CACHED_MAIN_CONTENTS;
 
